@@ -11,6 +11,7 @@ Postman collection for testing
 
 3. UI setup
 separate project
+https://github.com/dev-full-stack-22/angular-keycloak-setup
 
 
 Resources
