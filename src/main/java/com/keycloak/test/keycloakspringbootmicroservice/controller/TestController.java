@@ -3,6 +3,7 @@ package com.keycloak.test.keycloakspringbootmicroservice.controller;
 import javax.annotation.security.RolesAllowed;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/test")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class TestController {
 
 	@RequestMapping(value = "/anonymous", method = RequestMethod.GET)
